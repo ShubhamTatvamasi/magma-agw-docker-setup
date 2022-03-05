@@ -29,7 +29,7 @@ Download docker install script:
 wget https://github.com/magma/magma/raw/master/lte/gateway/deploy/agw_install_docker.sh
 ```
 
-Add the following command before `ansible-playbook` command:
+Add the following command in `agw_install_docker.sh` file before `ansible-playbook` command:
 ```bash
 sed -i 's/focal-1.6.1/focal-1.6.0/' /opt/magma/lte/gateway/deploy/roles/magma_deploy/vars/all.yaml
 ```
