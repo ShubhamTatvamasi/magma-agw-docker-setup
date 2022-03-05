@@ -109,3 +109,8 @@ Check if checkin is successful:
 ```bash
 docker exec magmad checkin_cli.py
 ```
+
+List all subscribers:
+```bash
+docker exec subscriberdb subscriber_cli.py list
+```
