@@ -1,5 +1,7 @@
 # magma-agw-docker-setup
 
+Rename your network interfaces to `eth0` and `eth1`
+
 Become root:
 ```bash
 sudo su
