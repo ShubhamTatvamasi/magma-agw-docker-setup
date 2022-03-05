@@ -67,12 +67,12 @@ docker-compose down
 Update `control_proxy.yml` file:
 ```bash
 cat << EOF > /var/opt/magma/configs/control_proxy.yml
-cloud_address: controller.xen.magmaindia.org
+cloud_address: controller.magmaindia.org
 cloud_port: 443
-bootstrap_address: bootstrapper-controller.xen.magmaindia.org
+bootstrap_address: bootstrapper-controller.magmaindia.org
 bootstrap_port: 443
-fluentd_address: fluentd.xen.magmaindia.org
-fluentd_port: 443
+fluentd_address: fluentd.magmaindia.org
+fluentd_port: 24224
 
 rootca_cert: /var/opt/magma/certs/rootCA.pem
 EOF
