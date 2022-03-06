@@ -56,7 +56,7 @@ cd /var/opt/magma/docker
 docker-compose up -d
 ```
 
-Get Hardware ID and Challenge key and AGW in your Orc8r:
+Get Hardware ID and Challenge key and add AGW in your Orc8r:
 ```bash
 docker exec magmad show_gateway_info.py
 ```
