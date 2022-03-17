@@ -19,14 +19,9 @@ Verify `rootCA.pem` file:
 openssl x509 -text -noout -in /var/opt/magma/certs/rootCA.pem
 ```
 
-Update DNS server:
-```bash
-sed -i 's/127.0.0.53/8.8.8.8/' /etc/resolv.conf
-```
-
 Download docker install script:
 ```bash
-wget https://github.com/magma/magma/raw/master/lte/gateway/deploy/agw_install_docker.sh
+wget https://github.com/ShubhamTatvamasi/magma/raw/ec2-resolv-conf-fix/lte/gateway/deploy/agw_install_docker.sh
 ```
 
 Add the following command in `agw_install_docker.sh` file before `ansible-playbook` command:
@@ -43,11 +38,6 @@ Add docker registry:
 ```bash
 sed -i 's,DOCKER_REGISTRY=,DOCKER_REGISTRY=shubhamtatvamasi/,' /var/opt/magma/docker/.env
 sed -i 's/IMAGE_VERSION=latest/IMAGE_VERSION=c9aafd9/' /var/opt/magma/docker/.env
-```
-
-Update DNS server again:
-```bash
-sed -i 's/127.0.0.53/8.8.8.8/' /etc/resolv.conf
 ```
 
 Start AGW:
