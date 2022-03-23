@@ -37,7 +37,7 @@ bash agw_install_docker.sh
 Add docker registry:
 ```bash
 sed -i 's,DOCKER_REGISTRY=,DOCKER_REGISTRY=shubhamtatvamasi/,' /var/opt/magma/docker/.env
-sed -i 's/IMAGE_VERSION=latest/IMAGE_VERSION=c9aafd9/' /var/opt/magma/docker/.env
+sed -i 's/IMAGE_VERSION=latest/IMAGE_VERSION=b1ade1f/' /var/opt/magma/docker/.env
 ```
 
 Start AGW:
