@@ -104,3 +104,9 @@ List all subscribers:
 ```bash
 docker exec subscriberdb subscriber_cli.py list
 ```
+
+
+Notes:
+- delete `attach_reject` section in **/etc/magma/eventd.yml**
+- delete `ipv6_solicitation` from `static_services` in **/etc/magma/pipelined.yml**
+
