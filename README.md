@@ -39,6 +39,8 @@ Add docker registry:
 sed -i 's,DOCKER_REGISTRY=,DOCKER_REGISTRY=magmacore/,' /var/opt/magma/docker/.env
 sed -i 's/IMAGE_VERSION=latest/IMAGE_VERSION=1.7.0/' /var/opt/magma/docker/.env
 ```
+Tested repo: `public.ecr.aws/z2g3r6f7/` tag: `latest`
+
 
 Start AGW:
 ```bash
