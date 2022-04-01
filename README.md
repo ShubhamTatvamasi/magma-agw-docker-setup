@@ -79,7 +79,7 @@ docker-compose up -d
 
 Check if you get `INFO:root:Bootstrapped Successfully!` message in the logs:
 ```bash
-docker logs magmad
+docker logs magmad -f
 ```
 
 Stop AGW services again:
