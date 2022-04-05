@@ -36,8 +36,8 @@ bash agw_install_docker.sh
 
 Add docker registry:
 ```bash
-sed -i 's,DOCKER_REGISTRY=,DOCKER_REGISTRY=magmacore/,' /var/opt/magma/docker/.env
-sed -i 's/IMAGE_VERSION=latest/IMAGE_VERSION=1.7.0/' /var/opt/magma/docker/.env
+sed -i 's,public.ecr.aws/z2g3r6f7,magmacore,' /var/opt/magma/docker/.env
+sed -i 's/latest/1.7.0/' /var/opt/magma/docker/.env
 ```
 Tested repo: `public.ecr.aws/z2g3r6f7/` tag: `latest`
 
