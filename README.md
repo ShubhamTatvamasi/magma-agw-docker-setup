@@ -77,6 +77,11 @@ Start AGW again:
 docker-compose up -d
 ```
 
+Check if you got `gateway.crt` and `gateway.key` files after bootstrap:
+```bash
+ls /var/opt/magma/certs/
+```
+
 Check if you get `INFO:root:Bootstrapped Successfully!` message in the logs:
 ```bash
 docker logs magmad -f
