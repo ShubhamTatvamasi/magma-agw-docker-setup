@@ -26,7 +26,7 @@ wget https://github.com/magma/magma/raw/master/lte/gateway/deploy/agw_install_do
 
 Add the following command in `agw_install_docker.sh` file before `ansible-playbook` command:
 ```bash
-sed -i 's/focal-1.6.1/focal-1.6.0/' /opt/magma/lte/gateway/deploy/roles/magma_deploy/vars/all.yaml
+sed -i 's/focal-1.7.0/focal-1.6.0/' /opt/magma/lte/gateway/deploy/roles/magma_deploy/vars/all.yaml
 ```
 
 Install AGW:
