@@ -76,6 +76,12 @@ rootca_cert: /var/opt/magma/certs/rootCA.pem
 EOF
 ```
 
+If you want to update domain then run:
+```bash
+sed -i 's/orc8r.magmacore.link/mumbaimaster.failedwizard.dev/g' /var/opt/magma/configs/control_proxy.yml
+```
+
+
 Start AGW again:
 ```bash
 docker-compose up -d
