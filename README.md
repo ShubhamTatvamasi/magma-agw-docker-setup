@@ -52,6 +52,12 @@ sed -i 's,magmacore,public.ecr.aws/z2g3r6f7,' /var/opt/magma/docker/.env
 sed -i 's/1.7.0/latest/' /var/opt/magma/docker/.env
 ```
 
+
+```bash
+sed -i 's,DOCKER_REGISTRY=,DOCKER_REGISTRY=public.ecr.aws/z2g3r6f7/,' /var/opt/magma/docker/.env
+sed -i 's/COMPOSE_PROJECT_NAME=agw/COMPOSE_PROJECT_NAME=agw_arm64/' /var/opt/magma/docker/.env
+```
+
 Start AGW:
 ```bash
 cd /var/opt/magma/docker
